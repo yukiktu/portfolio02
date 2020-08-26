@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>top</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/talk.js"></script>
+</head>
+<body uk-grid>
+  <div class="uk-width-1-4 uk-background-muted uk-visible@m" uk-height-viewport="expand: true">
+    <div class="uk-section uk-padding" uk-sticky="offset: 100; bottom: #top">
+      <h1 class="uk-text-lead uk-margin-remove">加藤勇輝</h1>
+      <h2 class="uk-text-meta uk-margin-remove">kato yuki</h2>
+      <p class="uk-text-meta">
+        <a href="https://github.com/yukiktu"><span uk-icon="github"></<span></a>
+        <a href="mailto:yuuki0421ktu&#64;gmail.com"><span uk-icon="mail"></span></a>
+        <a href="tel:08032157014"><span uk-icon="receiver"></span></a>
+      </p>
+      <div class="uk-margin-left">
+        <ul class="uk-list">
+            <li>
+              <a href="#PR" class="uk-link-text" uk-scroll>自己PR</a>
+            </li>
+            <li>
+              <a href="#schoolhistroy" class="uk-link-text" uk-scroll>学歴</a>
+            </li>
+            <li>
+              <a href="#jobhistory" class="uk-link-text" uk-scroll>職歴</a>
+            </li>
+            <li>
+              <a href="#skills" class="uk-link-text" uk-scroll>資格</a>
+            </li>
+            <li>
+              <a href="#questions" class="uk-link-text" uk-scroll>Q & A</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="uk-width-3-4@m uk-background-default uk-padding">
+    <div class="uk-container">
+      <ul uk-accordion="multiple: true">
+        <li>
+          <a id="PR" class="uk-accordion-title uk-text-lead" href="#">自己PR</a>
+          <div class="uk-section uk-section-default uk-accordion-content">
+            <div class="uk-article">
+              <p><性格面></p>
+              <p>■「貪欲に学ぶ」ことで、高い評価を得ました。私は技術を学ぶことに対して貪欲です。大学卒業後は建築業で現場管理者として従事しました。管理者にとどまらず、職人さんの技術を学び、理解することでより良い現場になるよう業務に取り組みました。納品も早くなり、職人さんからは「加藤さんの現場だったらいつでも来るよ」と声をかけてもらえたことが私の自信になっています。</p>
+              <p><技術者面></p>
+              <p>■元々プログラマーになりたかった背景もあり、3カ月間プログラミングスクールに通いRuby　on Railsを使ったwebアプリケーション作成を行った経験があります。</p>
+              <p>■業務時間外を利用しJavaやPython, SQLなどの技術研修などにも積極的に参加しています。</p>
+            </div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <a id="schoolhistroy" class="uk-accordion-title uk-text-lead" href="#">学歴</a>
+          <div class="uk-section uk-section-default uk-accordion-content">
+            <table class="uk-table uk-table-divider">
+              <tbody>
+                <tr>
+                  <td>2012年</td>
+                  <td>東京電機大学工学部</td>
+                  <td>入学</td>
+                </tr>
+                <tr>
+                  <td>2016年</td>
+                  <td>東京電機大学工学部</td>
+                  <td>卒業</td>
+                </tr>
+                <tr>
+                  <td>2019年</td>
+                  <td>DMM WEBCAMP</td>
+                  <td>卒業</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <a id="jobhistory" class="uk-accordion-title uk-text-lead" href="#">職歴</a>
+          <div class="uk-section uk-section-default uk-accordion-content">
+            <table class="uk-table uk-table-divider">
+              <tbody>
+                <tr>
+                  <td>2017年~</td>
+                  <td>ウッドスペース株式会社</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <span>内装工事の現場管理者として勤務</span>
+                  </td>
+                  <td>
+                    <button class="uk-button uk-button-default uk-margin-small-righ" type="button" uk-toggle="target: #modal-job1">詳細</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2019年~</td>
+                  <td>株式会社アウトソーシングテクノロジー</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>客先で教育情報化コーディネーターとして勤務.</td>
+                  <td>
+                    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-job2">詳細</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="modal-job1" uk-modal>
+              <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <p>【職務内容】</p>
+                <div uk-grid>
+                  <div>
+                    <p>［工事物件］品川プリンスホテル</p>
+                    <p>［物件概要］内装工事</p>
+                    <ul>
+                      <li>現場代理人補佐</li>
+                      <li>職長・安全衛生責任者</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>［工事物件］西武新宿駅</p>
+                    <p>［物件概要］内装工事</p>
+                    <ul>
+                      <li>現場代理人補佐</li>
+                      <li>職長・安全衛生責任者</li>
+                    </ul>
+                  </div>
+                </div>
+                <p>【業務においての強み】</p>
+                <p>相手が求めているものを実現するために努力を惜しみませんでした。</p>
+                <p>どんな状態であれば職人さんが作業しやすいか。事前の打ち合わせで要望を聞き、準備することに努めました。初めはあまり理解されませんでしたが、次第に納品が早くなっていき、評価していただけたことが私の自信になっています。</p>
+              </div>
+            </div>
+            <div id="modal-job2" uk-modal>
+              <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <p>【職務内容】</p>
+                <div>
+                  <p>教育情報化コーディネーター</p>
+                  <p>・学校における教育の情報化推進支援やプログラミング教育のサポートを行っています。</p>
+                </div>
+                <p>【業務においての強み】</p>
+                <p>・課題を発見し提案、解決する力</p>
+                <p>コロナ禍で教育の情報化が急がれる中、学校の課題を発見し提案、解決する力を培えました。また、教員・生徒と関わっていく上でのコミュニケーション能力も磨かれました。</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <a id="skills" class="uk-accordion-title uk-text-lead" href="#">資格</a>
+          <div class="uk-section uk-section-default uk-accordion-content">
+            <ul>
+              <li>Oracle Certified Java Programmer, Silver SE 8　取得</li>
+              <li>Oracle Master Bronze の取得に挑戦中</li>
+            </ul>
+          </div>
+          <hr />
+        </li>
+        <li class="uk-open">
+          <a id="questions" class="uk-accordion-title uk-text-lead" href="#">Q & A</a>
+          <div class="uk-accordion-content">
+            <button class="uk-button uk-button-default uk-margin-small-righ" type="button" uk-toggle="target: #readme">Read Me</button>
+            <div id="readme" uk-modal>
+              <div class="uk-modal-dialog uk-modal-body uk-padding">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <div class="uk-width-child-1-2@s" uk-grid>
+                  <div>
+                    <h2>Question</h2>
+                    <p>ex)</p>
+                    <ul>
+                      <li>趣味を教えて。</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2>Teaching</h2>
+                    <p><span class="uk-text-danger">@</span>を付けて話しかけてください</p>
+                    <p>ex)</p>
+                    <ul>
+                      <li><span class="uk-text-danger">@</span>リンゴの味は赤いです。</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="uk-section　uk-padding-remove-top">
+              <div class="uk-container">
+                <div id="talkbox" class="uk-card uk-height-large uk-card-default uk-border-rounded uk-margin-top  uk-panel uk-panel-scrollable" uk-height-viewport="expand: true">
+                  <div  id="talk" class="uk-card-body uk-padding-small">
+                    <div class="ai uk-grid-small uk-flex-bottom uk-flex-left" uk-grid>
+                      <div class="uk-width-auto">
+                        <img class="uk-border-circle" width="32" height="32" src="{{ STATIC_URL }}images/robot.jpeg">
+                      </div>
+                      <div class="uk-width-auto">
+                        <div class="uk-card uk-card-body uk-card-small uk-card-default uk-border-rounded">
+                          <p class="uk-margin-remove">こんにちわゲストさん。私はわたしはQ&A代行ロボットです。</p>
+                          <p class="uk-text-small">{{timestamp}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-card uk-padding-remove uk-position-z-index">
+                  <div class="uk-width-expand">
+                    <div class="uk-padding-small uk-padding-remove-horizontal">
+                      <form id="question_form">
+                        <input id="question" class="uk-input" type="text" placeholder="ここにテキストを入力して下さい" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
